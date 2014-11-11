@@ -1,4 +1,4 @@
-# Meu blog pessoal.
-ricardixbr.github.io
+blog
+====
 
-Repositório para uso do GitHub Pages.
+Meu blog pessoal.
