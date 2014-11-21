@@ -183,7 +183,7 @@ th {
   margin-left: auto;
   margin-right: auto; }
 
-.overflow--hidden, .site-main .content-area, .site-main .hentry {
+.overflow--hidden {
   overflow: hidden; }
 
 .background--white, .site .site-header,
@@ -197,9 +197,6 @@ th {
 .padding-left--5px {
   padding-left: 5px; }
 
-/**
- * Basic styling
- */
 html {
   box-sizing: border-box; }
 
@@ -216,6 +213,10 @@ body {
   -webkit-text-size-adjust: 100%;
   padding: 0 15px; }
 
+a {
+  color: #2B2B2B;
+  text-decoration: none; }
+
 .site {
   max-width: 73.125em;
   margin-left: auto;
@@ -224,48 +225,67 @@ body {
     content: " ";
     display: block;
     clear: both; }
-  .site a {
-    color: #2B2B2B;
-    text-decoration: none; }
+  .site .site-header,
+  .site .site-main,
+  .site .site-footer {
+    clear: both;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
 
-.site-header {
+.site-header .header-main {
+  width: 32.20339%;
+  float: left;
+  margin-right: 1.69492%; }
+  .site-header .header-main .inner {
+    margin-left: 1em; }
+.site-header .contact-main {
+  width: 23.72881%;
+  float: right;
+  margin-right: 0; }
+  .site-header .contact-main .inner {
+    margin-right: 1em; }
+  .site-header .contact-main .file-download {
+    background-color: #767676;
+    color: #dcdcdc;
+    padding: 5px;
+    display: inline-block; }
+
+.site-main .content-area {
+  clear: both;
   width: 100%;
   float: left;
   margin-left: 0;
   margin-right: 0; }
-  .site-header .header-main {
-    width: 32.20339%;
+.site-main .hentry {
+  clear: both;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
+.site-main .entry-header {
+  width: 32.20339%;
+  float: left;
+  margin-right: 1.69492%; }
+  .site-main .entry-header .inner {
+    margin-left: 1em; }
+.site-main .entry-content {
+  width: 66.10169%;
+  float: right;
+  margin-right: 0; }
+  .site-main .entry-content .inner {
+    margin-right: 1em; }
+  .site-main .entry-content > div > div:nth-child(1) {
+    width: 49.15254%;
     float: left;
     margin-right: 1.69492%; }
-  .site-header .contact-main {
-    width: 15.25424%;
-    float: left;
-    margin-right: 1.69492%;
-    margin-left: 50.84746%; }
-    .site-header .contact-main .file-download {
-      background-color: #767676;
-      color: #dcdcdc;
-      padding: 5px;
-      display: inline-block; }
+  .site-main .entry-content > div > div:nth-child(2) {
+    width: 49.15254%;
+    float: right;
+    margin-right: 0; }
 
-.site-main {
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0; }
-
-.site-footer {
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0; }
-  .site-footer .social-media {
-    padding: 0 0 5px 5px; }
-    .site-footer .social-media a {
-      margin-right: 5px; }
-
-#knowledge .content-web,
-#knowledge .content-software {
-  margin-left: 0; }
-#knowledge .content-software {
-  margin: 0; }
+.site-footer .social-media .inner {
+  margin-left: 1em; }
+.site-footer .social-media a {
+  margin-right: 5px; }
