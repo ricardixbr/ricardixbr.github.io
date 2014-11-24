@@ -211,7 +211,7 @@ body {
   color: #2B2B2B;
   background-color: #000;
   -webkit-text-size-adjust: 100%;
-  padding: 0 15px; }
+  padding: 2em 1em; }
 
 a {
   color: #2B2B2B;
@@ -234,23 +234,43 @@ a {
     margin-left: 0;
     margin-right: 0; }
 
-.site-header .header-main {
-  width: 32.20339%;
-  float: left;
-  margin-right: 1.69492%; }
-  .site-header .header-main .inner {
-    margin-left: 1em; }
-.site-header .contact-main {
-  width: 23.72881%;
-  float: right;
-  margin-right: 0; }
-  .site-header .contact-main .inner {
-    margin-right: 1em; }
-  .site-header .contact-main .file-download {
-    background-color: #767676;
-    color: #dcdcdc;
-    padding: 5px;
-    display: inline-block; }
+.site-header {
+  padding-top: 1.5em; }
+  .site-header .header-main {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%; }
+    .site-header .header-main .inner {
+      margin-left: 1em; }
+    .site-header .header-main .site-title {
+      margin: 0; }
+    .site-header .header-main .site-description {
+      margin-top: 0; }
+  .site-header .contact-main {
+    width: 23.72881%;
+    float: right;
+    margin-right: 0; }
+    .site-header .contact-main .inner {
+      margin-right: 1em; }
+    .site-header .contact-main p {
+      margin: 0 0 0.5em; }
+    .site-header .contact-main .file-download {
+      background-color: #767676;
+      color: #dcdcdc;
+      padding: 0.5em;
+      display: inline-block;
+      -webkit-transition: background-color 0.2s ease-out;
+      -moz-transition: background-color 0.2s ease-out;
+      -ms-transition: background-color 0.2s ease-out;
+      -o-transition: background-color 0.2s ease-out;
+      transition: background-color 0.2s ease-out; }
+      .site-header .contact-main .file-download:hover {
+        background-color: rgba(118, 118, 118, 0.7); }
+      .site-header .contact-main .file-download:focus {
+        background-color: rgba(118, 118, 118, 0.8);
+        outline: 0; }
+      .site-header .contact-main .file-download:active {
+        background-color: rgba(118, 118, 118, 0.9); }
 
 .site-main .content-area {
   clear: both;
@@ -288,4 +308,20 @@ a {
 .site-footer .social-media .inner {
   margin-left: 1em; }
 .site-footer .social-media a {
-  margin-right: 5px; }
+  margin-right: 0.25em; }
+  .site-footer .social-media a .outer-shape {
+    fill: #767676;
+    -webkit-transition: fill 0.2s ease-out;
+    -moz-transition: fill 0.2s ease-out;
+    -ms-transition: fill 0.2s ease-out;
+    -o-transition: fill 0.2s ease-out;
+    transition: fill 0.2s ease-out; }
+    .site-footer .social-media a .outer-shape:hover {
+      fill: rgba(118, 118, 118, 0.7); }
+    .site-footer .social-media a .outer-shape:focus {
+      fill: rgba(118, 118, 118, 0.8);
+      outline: 0; }
+    .site-footer .social-media a .outer-shape:active {
+      fill: rgba(118, 118, 118, 0.9); }
+  .site-footer .social-media a .inner-shape {
+    fill: #dcdcdc; }
