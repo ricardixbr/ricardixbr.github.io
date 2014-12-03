@@ -213,15 +213,33 @@ body {
   -webkit-text-size-adjust: 100%;
   padding: 2em 1em; }
 
-a {
-  color: #2B2B2B;
-  text-decoration: none; }
-
 h1 {
   line-height: 1.2; }
 
-h1, h3, p {
+h1, h2, h3, p {
   margin-top: 0; }
+
+a {
+  color: #000;
+  text-decoration: none; }
+
+a:visited {
+  color: #551a8b; }
+
+a:hover {
+  color: #06e; }
+
+::selection {
+  background: #a5a5a5;
+  color: #555; }
+
+::-moz-selection {
+  background: #a5a5a5;
+  color: #555; }
+
+::-webkit-selection {
+  background: #a5a5a5;
+  color: #555; }
 
 .site {
   max-width: 73.125em;
